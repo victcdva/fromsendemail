@@ -18,12 +18,6 @@ namespace FormSendEmail
 
         }
 
-        public XmlNodeList GetXML(string file, string fileRoute)
-        {
-            var xmlDoc = new XmlDocument();
-            xmlDoc.Load(Server.MapPath(file));
-            return xmlDoc.DocumentElement.SelectNodes(fileRoute);
-        }
 
         protected void SendRequest_Click(object sender, EventArgs e)
         {
