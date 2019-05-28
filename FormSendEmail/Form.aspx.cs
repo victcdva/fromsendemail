@@ -39,10 +39,10 @@ namespace FormSendEmail
             string _leadSource = Request.Form["lead_source"];
             string _description = Request.Form["description"];
 
-           XmlNodeList list = GetXML("~/MailList.xml", "/Emails/emails");
-       
+            XmlNodeList nodeList = GetXML("~/MailList.xml", "/Emails/emails");
 
-            foreach (XmlNode xmlNode in list)
+
+            foreach (XmlNode xmlNode in nodeList)
             {
                 from = xmlNode.SelectSingleNode("from").InnerText;
                 to = xmlNode.SelectSingleNode("to").InnerText;
