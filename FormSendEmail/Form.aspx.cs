@@ -39,7 +39,11 @@ namespace FormSendEmail
             string _leadSource = Request.Form["lead_source"];
             string _description = Request.Form["description"];
 
-            XmlNodeList nodeList = GetXML("~/MailList.xml", "/Emails/emails");
+            //var nodeList = GetXML("~/MailList.xml", "/Emails/emails");
+
+            var xmlDoc = new XmlDocument();
+            xmlDoc.Load(Server.MapPath("~/MailList.xml"));
+            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Emails/email");
 
 
             foreach (XmlNode xmlNode in nodeList)
@@ -50,7 +54,7 @@ namespace FormSendEmail
                 subject = xmlNode.SelectSingleNode("subject").InnerText;
             }
 
-            string body = "";
+            string body = _name + "\n" + _phone + "\n" + _email + "\n" + _city + "\n" + _country + "\n" + _doNotCall + "\n" + _industry + "\n" + _leadSource + "\n" + _description;
             var mailNew = new MailMessage(from, to, subject, body);
 
             string[] toCopies = cc.Split(',');
