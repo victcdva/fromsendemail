@@ -106,7 +106,7 @@
                         </tr>
                         <tr>
                             <td>                             
-                                <asp:Button ID="sendRequest" runat="server" Text="Submit" OnClick="sendRequest_Click"/>
+                                <asp:Button ID="sendRequest" runat="server" Text="Submit" OnClick="SendRequest_Click"/>
                             </td>
                         </tr>
                     </table>
