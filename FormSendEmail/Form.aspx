@@ -18,23 +18,21 @@
                             <td>
                                 <!--<label for="first_name">
                                     Nombre</label><br />-->
-                                <input id="first_name" value="Name" maxlength="40" name="first_name" style="width: 90%;" type="text"
-                                    class="validate[required]" data-validation-placeholder="Nombre" />
+                                <input id="first_name" value="Name" maxlength="40" name="first_name" style="width: 90%;" type="text" data-validation-placeholder="Nombre" />
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <!--<label for="last_name">
                                     Apellido</label><br />-->
-                                <input id="last_name" value="Last Name" maxlength="80" name="last_name" style="width: 90%;" type="text"
-                                    class="validate[required]" data-validation-placeholder="Apellido" />
+                                <input id="last_name" value="Last Name" maxlength="80" name="last_name" style="width: 90%;" type="text" data-validation-placeholder="Apellido" />
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <!--<label for="phone">
                                     Telefono</label><br />-->
-                                <input id="phone" value="Phone" maxlength="40" name="phone" style="width: 90%;" type="text" class="validate[required]"  data-validation-placeholder="Telefono" />
+                                <input id="phone" value="Phone" maxlength="40" name="phone" style="width: 90%;" type="text"  data-validation-placeholder="Telefono" />
                             </td>
                         </tr>
                         <tr>
@@ -48,15 +46,14 @@
                             <td>
                                 <!--<label for="city">
                                     Ciudad</label><br />-->
-                                <input id="city" value="City" maxlength="40" name="city" style="width: 90%;" type="text" class="validate[required]" data-validation-placeholder="Ciudad" />
+                                <input id="city" value="City" maxlength="40" name="city" style="width: 90%;" type="text" data-validation-placeholder="Ciudad" />
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <!--<label for="country">
                                     Pais</label><br />-->
-                                <input id="country" value="Country" maxlength="40" name="country" style="width: 90%;" type="text"
-                                    class="validate[required]" data-validation-placeholder="Pais" />
+                                <input id="country" value="Country" maxlength="40" name="country" style="width: 90%;" type="text" data-validation-placeholder="Pais" />
                             </td>
                         </tr>
                         <tr>
@@ -70,7 +67,7 @@
                             <td>
                                 <label for="industry">
                                     Industry</label><br />
-                                <select id="industry" name="industry" style="width: 100%;" class="validate[required]">
+                                <select id="industry" name="industry" style="width: 100%;">
                                  <option value="">Select proyect</option>
                                     <option value="Deportivo">Deportivo</option>
                                     <option value="Áreas Verdes">Áreas Verdes</option>
@@ -83,7 +80,7 @@
                                     How did you hear about us?
                                 </label>
                                 <br />
-                                <select id="lead_source" name="lead_source" style="width: 100%;" class="validate[required]" >
+                                <select id="lead_source" name="lead_source" style="width: 100%;" >
                                   <option value="">Select a medium</option>
                                     <option value="Búsqueda en Google">Búsqueda en Google</option>
                                     <option value="Por medio de Linked In">Por medio de Linked In</option>
